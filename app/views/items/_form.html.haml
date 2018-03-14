@@ -1,0 +1,12 @@
+= form_for(@item) do |f| 
+	%p= f.label :serial_num
+	= f.text_field :serial_num
+	%p= f.label :description
+	= f.text_field :description
+	%p= f.label :supplier
+	= f.text_field :supplier
+	%p= f.label :status
+	= f.text_field :status
+	%p= f.label :lender
+	= f.text_field :lender
+	=f.submit
