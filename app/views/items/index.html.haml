@@ -1,6 +1,7 @@
 %h1 Welcome to the items list
 %p Hope you find what you're looking for
-%button{:type => "button"} #{link_to 'New', new_item_path}
+#needs_space
+	%button{:type => "button"} #{link_to 'New', new_item_path}
 %table
 	%thead
 		%th Serial Number
@@ -22,5 +23,3 @@
 					%button{:type => "button"} #{link_to 'Edit', edit_item_path(item)}
 				%td<
 					%button{:type => "button"} #{link_to 'Destroy', item, method: :delete, data: {confirm: 'Are you sure?'}}
-
-	
